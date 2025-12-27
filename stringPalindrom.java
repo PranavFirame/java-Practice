@@ -4,7 +4,7 @@ public class stringPalindrom {
         int i = 0;
         while(i<=(n/2)){
             if(s.charAt(i)!=s.charAt(n-i)){
-                System.out.println("thia string is not palindrom");
+                System.out.println("this string is not palindrom");
                 return false;
             }
             i++;
@@ -14,7 +14,7 @@ public class stringPalindrom {
     }
 
     public static void main(String args[]){
-        String name = new String("HEHj");
+        String name = new String("HEH");
         isPalindrom(name);
     }    
 }

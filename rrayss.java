@@ -96,13 +96,13 @@ public class rrayss {
     public static void main(String args[]){
         // int arr[] = new int[5];
         int arr[] = {100,20,3,4,5};
-        // reverseArr(arr);
-        // traverse(arr);
-        // linearSearch(arr, 2);
-        // System.out.println(binarySearch(arr, 100));
-        // pairs(arr);
-        // subArray(arr);
-        // bubboleSort(arr);
+        reverseArr(arr);
+        traverse(arr);
+        linearSearch(arr, 2);
+        System.out.println(binarySearch(arr, 100));
+        pairs(arr);
+        subArray(arr);
+        bubboleSort(arr);
         selectionSort(arr);
         traverse(arr);
     }

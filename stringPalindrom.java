@@ -14,7 +14,7 @@ public class stringPalindrom {
     }
 
     public static void main(String args[]){
-        String name = new String("HEHj");
+        String name = new String("HEH");
         isPalindrom(name);
     }    
 }

@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Strings {
     static void memoryOptimization(String s){
         StringBuilder sb = new StringBuilder(s);
+        
         for(char ch='a'; ch<='z';ch++){
             sb.append(ch);
         }
@@ -26,7 +27,6 @@ public class Strings {
                 sb.append(count.toString());
             }
         }
-        
         System.out.println(sb.toString());
     }
 

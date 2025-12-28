@@ -21,10 +21,12 @@ public class Strings {
                 i++;
             }
             sb.append(str.charAt(i));
+
             if (count>1) {
                 sb.append(count.toString());
             }
         }
+        
         System.out.println(sb.toString());
     }
 

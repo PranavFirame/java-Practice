@@ -44,19 +44,33 @@ public class BitwiseOperations {
 
     static void clearLastI(int num, int i){
         int bitmask = (-1)<<i;
+
         System.out.println("cleared last i bits: "+ (num & bitmask));
+    }
+    static void countSet(int num){
+        int count = 0;
+        while(num>0){
+            if((num & 1) != 0){
+                count++;
+            }
+            num = num>>1;
+        }
+        System.out.println("Bits in num: "+count);
     }
 
     public static void main(String args[]){
+
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number to check: ");
         int n = sc.nextInt();
+
         isOddOREven(n);
         getIthBit(1001, 3);
         setIthBit(10, 2);
         clearIthBit(10, 1);
         updateBit(10, 2, 1);
         clearLastI(21, 2);
+        countSet(15);
         sc.close();
     } 
 }
